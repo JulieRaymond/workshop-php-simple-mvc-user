@@ -29,6 +29,7 @@ class UserController extends AbstractController
                 $error = "L'adresse e-mail ou le mot de passe est incorrect.";
                 $errors[] = $error;
                 return $this->twig->render('User/login.html.twig', ['errors' => $errors]);
+                //manque le fait de faire la boucle for dans login si ce cas existe
             }
         }
         return $this->twig->render('User/login.html.twig');
